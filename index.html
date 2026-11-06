@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto de vida e responsabilidade pelo mundo comum · Hannah Arendt</title>
+  <meta name="description" content="Hannah Arendt diante da polarização contemporânea">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="intro-ativa">
+
+  <!-- Fundo: estrelas com paralaxe e efeito de dobra durante as viagens -->
+  <canvas id="estrelas" aria-hidden="true"></canvas>
+  <div class="nebulosa" aria-hidden="true"></div>
+
+  <!-- Palco: o "mundo" inteiro é movido pela câmera -->
+  <main id="palco" aria-live="polite">
+    <div id="mundo">
+
+      <!-- Camada decorativa do mapa -->
+      <svg id="mapa-deco" aria-hidden="true">
+        <g class="circulos">
+          <circle r="1500"/><circle r="3200"/><circle r="4900"/><circle r="6600" class="pontilhado"/>
+        </g>
+        <path id="trilha-base"/>
+        <path id="trilha-luz"/>
+      </svg>
+
+              <div class="palavra-gigante" style="transform: translate(-2100px, 1900px) translate(-50%, -50%) rotate(-18deg); font-size: 620px">PENSAR</div>
+              <div class="palavra-gigante" style="transform: translate(-4700px, 300px) translate(-50%, -50%) rotate(80deg); font-size: 560px">JULGAR</div>
+              <div class="palavra-gigante" style="transform: translate(3700px, 1300px) translate(-50%, -50%) rotate(-12deg); font-size: 760px">AGIR</div>
+              <div class="palavra-gigante" style="transform: translate(-2300px, -2650px) translate(-50%, -50%) rotate(12deg); font-size: 470px">PLURALIDADE</div>
+              <div class="palavra-gigante" style="transform: translate(3400px, -2350px) translate(-50%, -50%) rotate(-20deg); font-size: 470px">NATALIDADE</div>
+              <div class="palavra-gigante" style="transform: translate(0px, 6000px) translate(-50%, -50%) rotate(0deg); font-size: 900px">MUNDO COMUM</div>
+      
+              <section class="quadro layout-titulo"
+                 id="q1"
+                 data-x="0" data-y="0" data-r="0" data-s="1.3"
+                 data-rotulo="Abertura"
+                 aria-label="1. Abertura"
+                 style="transform: translate(0px, 0px) rotate(0deg) scale(1.3) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            
+    <div class="titulo-wrap">
+      <svg class="orbitas" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <radialGradient id="gA" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#e0a458" stop-opacity=".95"/><stop offset="1" stop-color="#e0a458" stop-opacity=".15"/></radialGradient>
+          <radialGradient id="gB" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#b83a55" stop-opacity=".9"/><stop offset="1" stop-color="#b83a55" stop-opacity=".1"/></radialGradient>
+          <radialGradient id="gC" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f3ece2" stop-opacity=".85"/><stop offset="1" stop-color="#f3ece2" stop-opacity=".08"/></radialGradient>
+        </defs>
+        <g class="orb-rot">
+          <circle class="orb o1" cx="250" cy="250" r="140" fill="url(#gB)"/>
+          <circle class="orb o2" cx="350" cy="250" r="140" fill="url(#gA)"/>
+          <circle class="orb o3" cx="300" cy="337" r="140" fill="url(#gC)"/>
+        </g>
+        <circle cx="300" cy="290" r="270" fill="none" stroke="#e0a458" stroke-opacity=".35" stroke-dasharray="2 10" class="anel-gira"/>
+        <circle cx="300" cy="290" r="292" fill="none" stroke="#f3ece2" stroke-opacity=".12" class="anel-gira inv"/>
+      </svg>
+      <div class="titulo-txt">
+        <p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">01</span>Seminário · Psicologia</p>
+        <h1 class="titulo-mega split">Projeto de vida e responsabilidade pelo mundo comum</h1>
+        <p class="subtitulo rv" style="--i:6">Hannah Arendt diante da polarização contemporânea</p>
+        <div class="linha-ouro rv" style="--i:7"></div>
+        <p class="instituicao rv" style="--i:8">UNIVERSIDADE CATÓLICA DE BRASÍLIA · Faculdade de Psicologia</p>
+        <p class="autores rv" style="--i:9">Nicole Alves, Thayane, Ryan e Weney — [Data]</p>
+      </div>
+    </div>          </div>
+          <template class="notas">Bom dia a todos. Nosso seminário pergunta como construir um projeto de vida que não se reduza a sobreviver, estudar e trabalhar, mas assuma responsabilidade pelo mundo comum.</template>
+        </section>
+              <section class="quadro layout-problema"
+                 id="q2"
+                 data-x="0" data-y="-2300" data-r="-3" data-s="0.9"
+                 data-rotulo="O problema"
+                 aria-label="2. O problema"
+                 style="transform: translate(0px, -2300px) rotate(-3deg) scale(0.9) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">02</span>O problema</p><h2 class="titulo split">Como viver em um tempo de pressão para obedecer?</h2></header>
+    <div class="grade-problema">
+      <ul class="lista"><li class="rv" style="--i:2"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/grupo.png');mask-image:url('assets/img/icons/grupo.png')" aria-hidden="true"></span><span>Pressões para repetir opiniões do grupo</span></li><li class="rv" style="--i:3"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/silencio.png');mask-image:url('assets/img/icons/silencio.png')" aria-hidden="true"></span><span>Medo de discordar de colegas, chefias, famílias ou comunidades</span></li><li class="rv" style="--i:4"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/fogo.png');mask-image:url('assets/img/icons/fogo.png')" aria-hidden="true"></span><span>Polêmicas morais transformadas em “guerra” entre bons e maus</span></li><li class="rv" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/jornal.png');mask-image:url('assets/img/icons/jornal.png')" aria-hidden="true"></span><span>Desinformação circulando mais rápido do que a reflexão</span></li><li class="rv" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/olho-fechado.png');mask-image:url('assets/img/icons/olho-fechado.png')" aria-hidden="true"></span><span>Omissão diante de discriminação e injustiça</span></li></ul>
+      <div class="estatistica rv" style="--i:8">
+        <div class="ondas" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="numero"><span class="contador" data-alvo="70">0</span><small>%</small></div>
+        <p>mais chance de ser retuitada: notícias falsas × verdadeiras (Twitter, 2006–2017)</p>
+      </div>
+    </div><p class="fonte rv" style="--i:12">Fontes: Vosoughi, Roy e Aral (2018); Asch (1956); Wardle e Derakhshan (2017)</p><span class="fantasma" aria-hidden="true">02</span>          </div>
+          <template class="notas">Vivemos um momento em que muitas pessoas sentem que precisam escolher um lado antes mesmo de pensar. Arendt pergunta: é possível manter convicções sem abandonar a capacidade de julgar por conta própria?</template>
+        </section>
+              <section class="quadro layout-linha_tempo"
+                 id="q3"
+                 data-x="1909" data-y="-1660" data-r="-9" data-s="0.8"
+                 data-rotulo="Quem foi Arendt"
+                 aria-label="3. Quem foi Arendt"
+                 style="transform: translate(1909px, -1660px) rotate(-9deg) scale(0.8) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">03</span>Quem foi Arendt</p><h2 class="titulo split">Hannah Arendt <em>(1906–1975)</em></h2></header>
+    <div class="linha-tempo">
+      <div class="lt-trilho"><div class="lt-luz"></div></div>
+      <ol><li class="marco" style="--i:2"><b>1906</b><span>Nasce na Alemanha</span></li><li class="marco" style="--i:3"><b>1933</b><span>Deixa a Alemanha</span></li><li class="marco" style="--i:4"><b>1941</b><span>Exílio nos EUA</span></li><li class="marco" style="--i:5"><b>1951</b><span>Origens do totalitarismo</span></li><li class="marco" style="--i:6"><b>1958</b><span>A condição humana</span></li><li class="marco" style="--i:7"><b>1963</b><span>Eichmann em Jerusalém</span></li></ol>
+    </div>
+    <ul class="lista duas-col"><li class="rv" style="--i:7"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/mapa.png');mask-image:url('assets/img/icons/mapa.png')" aria-hidden="true"></span><span>Pensadora alemã-judia, exilada do nazismo</span></li><li class="rv" style="--i:8"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/instituicao.png');mask-image:url('assets/img/icons/instituicao.png')" aria-hidden="true"></span><span>Analisou totalitarismo, responsabilidade e vida política</span></li><li class="rv" style="--i:9"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/cerebro.png');mask-image:url('assets/img/icons/cerebro.png')" aria-hidden="true"></span><span>Pensar, julgar e agir: responsabilidade de cada pessoa</span></li><li class="rv" style="--i:10"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/pessoas.png');mask-image:url('assets/img/icons/pessoas.png')" aria-hidden="true"></span><span>A política nasce da pluralidade: pessoas diferentes falando e agindo juntas</span></li></ul><p class="fonte rv" style="--i:12">Fontes: Young-Bruehl (1997); Arendt (1951; 1958; 1963)</p><span class="fantasma" aria-hidden="true">03</span>          </div>
+          <template class="notas">Arendt não oferece um manual de conduta, mas uma forma de resistência: pensar quando todos exigem obediência, julgar quando todos repetem e agir quando o silêncio parece mais seguro.</template>
+        </section>
+              <section class="quadro layout-triade"
+                 id="q4"
+                 data-x="2733" data-y="384" data-r="5" data-s="1"
+                 data-rotulo="Conceitos centrais"
+                 aria-label="4. Conceitos centrais"
+                 style="transform: translate(2733px, 384px) rotate(5deg) scale(1) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">04</span>Conceitos centrais</p><h2 class="titulo split">Trabalho, obra e ação</h2></header><div class="triade"><article class="card-triade rv" style="--i:2; --h:370px"><div class="card-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/broto.png');mask-image:url('assets/img/icons/broto.png')" aria-hidden="true"></span></div><h3>Trabalho</h3><p>Manutenção da vida e consumo: renda, moradia, saúde</p><span class="degrau">1</span></article><div class="seta rv" style="--i:3"><svg viewBox="0 0 80 24"><path d="M0 12 H70 M60 2 L74 12 L60 22"/></svg></div><article class="card-triade rv" style="--i:4; --h:425px"><div class="card-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/martelo.png');mask-image:url('assets/img/icons/martelo.png')" aria-hidden="true"></span></div><h3>Obra</h3><p>Produção de um mundo durável: formação, profissão, instituições</p><span class="degrau">2</span></article><div class="seta rv" style="--i:5"><svg viewBox="0 0 80 24"><path d="M0 12 H70 M60 2 L74 12 L60 22"/></svg></div><article class="card-triade rv" style="--i:6; --h:480px"><div class="card-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/dialogo.png');mask-image:url('assets/img/icons/dialogo.png')" aria-hidden="true"></span></div><h3>Ação</h3><p>Palavras e atos entre pessoas: deliberar, denunciar, cuidar do coletivo</p><span class="degrau">3</span></article></div><p class="fonte rv" style="--i:12">Fontes: Arendt, A condição humana (1958)</p><span class="fantasma" aria-hidden="true">04</span>          </div>
+          <template class="notas">O trabalho garante a sobrevivência; a obra constrói algo que permanece; a ação acontece entre as pessoas e é aí que nasce a responsabilidade política.</template>
+        </section>
+              <section class="quadro layout-aneis"
+                 id="q5"
+                 data-x="1628" data-y="2508" data-r="8" data-s="0.75"
+                 data-rotulo="Projeto de vida"
+                 aria-label="5. Projeto de vida"
+                 style="transform: translate(1628px, 2508px) rotate(8deg) scale(0.75) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">05</span>Projeto de vida</p><h2 class="titulo split">Um projeto de vida não é apenas carreira</h2></header>
+    <div class="aneis-wrap">
+      <div class="aneis" aria-hidden="true">
+        <div class="anel r2 rv" style="--i:7"><span>Pertencer</span></div>
+        <div class="anel r1 rv" style="--i:5"><span>Realizar-se</span></div>
+        <div class="anel r0 rv" style="--i:3"><span>Sobreviver</span></div>
+      </div>
+      <ul class="aneis-legenda"><li class="rv anel-leg a0" style="--i:3"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/casa.png');mask-image:url('assets/img/icons/casa.png')" aria-hidden="true"></span><div><b>Sobreviver</b><span>Garantir condições materiais de existência</span></div></li><li class="rv anel-leg a1" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/estrela.png');mask-image:url('assets/img/icons/estrela.png')" aria-hidden="true"></span><div><b>Realizar-se</b><span>Construir competências, obra e legado</span></div></li><li class="rv anel-leg a2" style="--i:7"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/globo.png');mask-image:url('assets/img/icons/globo.png')" aria-hidden="true"></span><div><b>Pertencer ao mundo</b><span>Agir com outras pessoas diante de problemas comuns</span></div></li></ul>
+    </div>
+    <blockquote class="pergunta rv" style="--i:10">Meu projeto inclui apenas o que eu ganho, ou também o mundo que ajudo a sustentar?</blockquote><p class="fonte rv" style="--i:12">Fontes: Arendt (1958); Damon (2009)</p><span class="fantasma" aria-hidden="true">05</span>          </div>
+          <template class="notas">Um projeto centrado só no trabalho pode virar sobrevivência; centrado só na obra, busca de reconhecimento. Ele se torna ético e político quando inclui ação.</template>
+        </section>
+              <section class="quadro layout-citacao"
+                 id="q6"
+                 data-x="-888" data-y="3095" data-r="-7" data-s="0.85"
+                 data-rotulo="Pensamento"
+                 aria-label="6. Pensamento"
+                 style="transform: translate(-888px, 3095px) rotate(-7deg) scale(0.85) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">06</span>Pensamento</p><h2 class="titulo split">Pensar é interromper a repetição</h2></header>
+    <div class="grade-citacao">
+      <figure class="citacao rv" style="--i:2">
+        <span class="ico aspas-ico" style="-webkit-mask-image:url('assets/img/icons/aspas.png');mask-image:url('assets/img/icons/aspas.png')" aria-hidden="true"></span>
+        <blockquote class="split-lento">“Eu só cumpri ordens”</blockquote>
+        <figcaption>não elimina a responsabilidade pessoal</figcaption>
+        <div class="risco"></div>
+      </figure>
+      <ul class="lista"><li class="rv" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/cerebro.png');mask-image:url('assets/img/icons/cerebro.png')" aria-hidden="true"></span><span>Pensar não é ter todas as respostas</span></li><li class="rv" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/pensamento.png');mask-image:url('assets/img/icons/pensamento.png')" aria-hidden="true"></span><span>É dialogar consigo mesmo sobre o que fazemos e aceitamos</span></li><li class="rv" style="--i:7"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/robo.png');mask-image:url('assets/img/icons/robo.png')" aria-hidden="true"></span><span>A ausência de pensamento facilita a obediência automática</span></li></ul>
+    </div><p class="fonte rv" style="--i:12">Fontes: Arendt, A vida do espírito (1978); Eichmann em Jerusalém (1963)</p><span class="fantasma" aria-hidden="true">06</span>          </div>
+          <template class="notas">Para Arendt, o perigo não está apenas nas pessoas cruéis, mas também nas que deixaram de perguntar se aquilo que fazem é justo.</template>
+        </section>
+              <section class="quadro layout-balanca"
+                 id="q7"
+                 data-x="-3127" data-y="1458" data-r="-6" data-s="0.8"
+                 data-rotulo="Julgamento"
+                 aria-label="7. Julgamento"
+                 style="transform: translate(-3127px, 1458px) rotate(-6deg) scale(0.8) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">07</span>Julgamento</p><h2 class="titulo split">Julgar sem abandonar a pluralidade</h2></header>
+    <div class="balanca-wrap">
+      <svg class="balanca-svg rv" style="--i:2" viewBox="0 0 400 320" aria-hidden="true">
+        <line x1="200" y1="40" x2="200" y2="290" class="b-haste"/>
+        <path d="M140 300 H260" class="b-haste"/>
+        <circle cx="200" cy="40" r="10" class="b-pino"/>
+        <g class="b-braco">
+          <line x1="60" y1="70" x2="340" y2="70" class="b-haste"/>
+          <g class="b-prato esq"><path d="M60 70 L20 170 M60 70 L100 170"/><path d="M10 170 Q60 210 110 170 Z" class="b-cuia"/></g>
+          <g class="b-prato dir"><path d="M340 70 L300 170 M340 70 L380 170"/><path d="M290 170 Q340 210 390 170 Z" class="b-cuia"/></g>
+        </g>
+      </svg>
+      <ul class="balanca-itens"><li class="rv b0" style="--i:3"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/troca.png');mask-image:url('assets/img/icons/troca.png')" aria-hidden="true"></span><span>Julgar exige imaginar o ponto de vista do outro</span></li><li class="rv b1" style="--i:4"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/aperto-de-maos.png');mask-image:url('assets/img/icons/aperto-de-maos.png')" aria-hidden="true"></span><span>Não confundir convicção com imposição</span></li><li class="rv b2" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/balanca.png');mask-image:url('assets/img/icons/balanca.png')" aria-hidden="true"></span><span>Não confundir respeito à diferença com aceitação de injustiça</span></li><li class="rv b3" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/pessoas.png');mask-image:url('assets/img/icons/pessoas.png')" aria-hidden="true"></span><span>O julgamento se fortalece no encontro com pessoas diferentes</span></li></ul>
+    </div><p class="fonte rv" style="--i:12">Fontes: Arendt, Conferências sobre a filosofia política de Kant (1982); Responsabilidade e julgamento (2003)</p><span class="fantasma" aria-hidden="true">07</span>          </div>
+          <template class="notas">Julgar não é condenar rapidamente: é pesar, escutar, comparar e assumir uma posição, mesmo quando ela desagrada o grupo.</template>
+        </section>
+              <section class="quadro layout-destaque"
+                 id="q8"
+                 data-x="-3362" data-y="-1497" data-r="9" data-s="0.9"
+                 data-rotulo="Pluralidade"
+                 aria-label="8. Pluralidade"
+                 style="transform: translate(-3362px, -1497px) rotate(9deg) scale(0.9) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">08</span>Pluralidade</p><h2 class="titulo split">A política começa na diferença</h2></header>
+    <div class="grade-destaque v-multidao">
+      <div class="destaque rv" style="--i:2">
+        <div class="multidao" aria-hidden="true"><i class="p circ" style="--k:0; --hue:-10"></i><i class="p circ" style="--k:1; --hue:37"></i><i class="p circ" style="--k:2; --hue:14"></i><i class="p tri" style="--k:3; --hue:-9"></i><i class="p circ" style="--k:4; --hue:38"></i><i class="p circ" style="--k:5; --hue:15"></i><i class="p losango" style="--k:6; --hue:-8"></i><i class="p tri" style="--k:7; --hue:39"></i><i class="p circ" style="--k:8; --hue:16"></i><i class="p quadrado" style="--k:9; --hue:-7"></i><i class="p losango" style="--k:10; --hue:40"></i><i class="p tri" style="--k:11; --hue:17"></i><i class="p quadrado" style="--k:12; --hue:-6"></i><i class="p quadrado" style="--k:13; --hue:41"></i><i class="p losango" style="--k:14; --hue:18"></i><i class="p circ" style="--k:15; --hue:-5"></i><i class="p quadrado" style="--k:16; --hue:42"></i><i class="p quadrado" style="--k:17; --hue:19"></i><i class="p circ" style="--k:18; --hue:-4"></i><i class="p circ" style="--k:19; --hue:43"></i><i class="p quadrado" style="--k:20; --hue:20"></i><i class="p circ" style="--k:21; --hue:-3"></i><i class="p circ" style="--k:22; --hue:44"></i><i class="p circ" style="--k:23; --hue:21"></i><i class="p tri" style="--k:24; --hue:-2"></i><i class="p circ" style="--k:25; --hue:45"></i><i class="p circ" style="--k:26; --hue:22"></i><i class="p losango" style="--k:27; --hue:-1"></i><i class="p tri" style="--k:28; --hue:46"></i><i class="p circ" style="--k:29; --hue:23"></i><i class="p quadrado" style="--k:30; --hue:0"></i><i class="p losango" style="--k:31; --hue:47"></i><i class="p tri" style="--k:32; --hue:24"></i><i class="p quadrado" style="--k:33; --hue:1"></i><i class="p quadrado" style="--k:34; --hue:48"></i><i class="p losango" style="--k:35; --hue:25"></i><i class="p circ" style="--k:36; --hue:2"></i><i class="p quadrado" style="--k:37; --hue:49"></i><i class="p quadrado" style="--k:38; --hue:26"></i><i class="p circ" style="--k:39; --hue:3"></i><i class="p circ" style="--k:40; --hue:50"></i><i class="p quadrado" style="--k:41; --hue:27"></i></div>
+        <p class="destaque-frase">Iguais em humanidade, nunca idênticos</p>
+        <p class="destaque-leg">a pluralidade é condição da liberdade</p>
+      </div>
+      <ul class="lista"><li class="rv" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/grupo.png');mask-image:url('assets/img/icons/grupo.png')" aria-hidden="true"></span><span>Somos iguais em humanidade, mas nunca idênticos</span></li><li class="rv" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/microfone.png');mask-image:url('assets/img/icons/microfone.png')" aria-hidden="true"></span><span>A liberdade se realiza na fala e na ação públicas</span></li><li class="rv" style="--i:7"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/proibido.png');mask-image:url('assets/img/icons/proibido.png')" aria-hidden="true"></span><span>Reduzir o outro a inimigo destrói o espaço comum</span></li></ul>
+    </div><p class="fonte rv" style="--i:12">Fontes: Arendt, A condição humana (1958)</p><span class="fantasma" aria-hidden="true">08</span>          </div>
+          <template class="notas">Quando só queremos convivência com quem pensa como nós, deixamos de viver politicamente e passamos a viver em guetos.</template>
+        </section>
+              <section class="quadro layout-dupla"
+                 id="q9"
+                 data-x="-1143" data-y="-3739" data-r="4" data-s="0.85"
+                 data-rotulo="Liberdade política"
+                 aria-label="9. Liberdade política"
+                 style="transform: translate(-1143px, -3739px) rotate(4deg) scale(0.85) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">09</span>Liberdade política</p><h2 class="titulo split">Liberdade não é apenas “fazer o que quero”</h2></header><div class="dupla"><article class="painel luz rv" style="--i:2"><div class="painel-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/porta.png');mask-image:url('assets/img/icons/porta.png')" aria-hidden="true"></span></div><h3>Liberdade política</h3><ul><li class="rv" style="--i:4">Participar da construção do mundo comum</li><li class="rv" style="--i:5">Exige escuta, palavra, discordância e compromisso</li></ul></article><div class="versus rv" style="--i:4"><span>×</span></div><article class="painel sombra rv" style="--i:5"><div class="painel-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/cadeado.png');mask-image:url('assets/img/icons/cadeado.png')" aria-hidden="true"></span></div><h3>Quando a unidade sufoca</h3><ul><li class="rv" style="--i:7">Uma comunidade muito unida pode sufocar a liberdade</li><li class="rv" style="--i:8">Unidade não pode significar eliminação da diferença</li></ul></article></div><p class="fonte rv" style="--i:12">Fontes: Arendt, “O que é liberdade?”, em Entre o passado e o futuro (1961)</p><span class="fantasma" aria-hidden="true">09</span>          </div>
+          <template class="notas">Há discursos que prometem unidade, ordem e pureza moral, mas cobram um preço alto: o silêncio das dúvidas e a exclusão dos diferentes.</template>
+        </section>
+              <section class="quadro layout-destaque"
+                 id="q10"
+                 data-x="2194" data-y="-3511" data-r="-10" data-s="1"
+                 data-rotulo="Natalidade"
+                 aria-label="10. Natalidade"
+                 style="transform: translate(2194px, -3511px) rotate(-10deg) scale(1) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">10</span>Natalidade</p><h2 class="titulo split">Natalidade: a capacidade de começar algo novo</h2></header>
+    <div class="grade-destaque v-broto">
+      <div class="destaque rv" style="--i:2">
+        <svg class="broto-svg" viewBox="0 0 300 380" aria-hidden="true">
+      <path class="b-solo" d="M20 340 Q150 320 280 340"/>
+      <path class="b-caule" d="M150 340 C150 280 140 230 150 160"/>
+      <path class="b-folha f1" d="M150 220 C110 210 80 180 78 140 C118 145 145 175 150 220Z"/>
+      <path class="b-folha f2" d="M150 175 C190 165 225 130 228 85 C185 92 155 125 150 175Z"/>
+      <circle class="b-semente" cx="150" cy="150" r="6"/>
+      <g class="b-raios"><line x1="150" y1="60" x2="150" y2="20"/><line x1="90" y1="80" x2="65" y2="50"/><line x1="210" y1="80" x2="235" y2="50"/></g>
+    </svg>
+        <p class="destaque-frase">Ninguém está condenado a repetir o mundo que recebeu</p>
+        <p class="destaque-leg">cada pessoa chega ao mundo como alguém singular</p>
+      </div>
+      <ul class="lista"><li class="rv" style="--i:5"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/trajeto.png');mask-image:url('assets/img/icons/trajeto.png')" aria-hidden="true"></span><span>Mudar de trajetória é um ato de natalidade</span></li><li class="rv" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/caminhos.png');mask-image:url('assets/img/icons/caminhos.png')" aria-hidden="true"></span><span>Toda ação traz consequências imprevisíveis</span></li><li class="rv" style="--i:7"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/broto.png');mask-image:url('assets/img/icons/broto.png')" aria-hidden="true"></span><span>Começar de novo: rever uma opinião, sair de um ambiente opressor, defender quem foi silenciado</span></li></ul>
+    </div><p class="fonte rv" style="--i:12">Fontes: Arendt, A condição humana (1958)</p><span class="fantasma" aria-hidden="true">10</span>          </div>
+          <template class="notas">A natalidade nos lembra que é possível começar de novo: rever uma opinião, sair de um ambiente opressor, defender alguém silenciado.</template>
+        </section>
+              <section class="quadro layout-fluxo"
+                 id="q11"
+                 data-x="4316" data-y="-684" data-r="-1" data-s="0.8"
+                 data-rotulo="Estudo de caso"
+                 aria-label="11. Estudo de caso"
+                 style="transform: translate(4316px, -684px) rotate(-1deg) scale(0.8) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">11</span>Estudo de caso</p><h2 class="titulo split">Caso: desinformação e omissão institucional</h2></header>
+    <div class="fluxo">
+      <svg class="fluxo-linha" viewBox="0 0 1400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M20 20 H1380"/></svg>
+      <ol><li class="etapa" style="--i:2"><div class="etapa-num">1</div><div class="etapa-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/megafone.png');mask-image:url('assets/img/icons/megafone.png')" aria-hidden="true"></span></div><p>Circula na universidade um conteúdo falso sobre uma minoria</p></li><li class="etapa" style="--i:4"><div class="etapa-num">2</div><div class="etapa-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/coracao-partido.png');mask-image:url('assets/img/icons/coracao-partido.png')" aria-hidden="true"></span></div><p>Linguagem moral e emocional gera medo</p></li><li class="etapa" style="--i:6"><div class="etapa-num">3</div><div class="etapa-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/compartilhar.png');mask-image:url('assets/img/icons/compartilhar.png')" aria-hidden="true"></span></div><p>Colegas repetem a informação sem verificar</p></li><li class="etapa" style="--i:8"><div class="etapa-num">4</div><div class="etapa-ico"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/instituicao.png');mask-image:url('assets/img/icons/instituicao.png')" aria-hidden="true"></span></div><p>A instituição sabe, mas evita se posicionar</p></li></ol>
+    </div>
+    <p class="fluxo-alerta rv" style="--i:11">Desinformação não é apenas erro de informação: organiza emoções, inimigos e silêncios.</p><p class="fonte rv" style="--i:12">Fontes: Wardle e Derakhshan (2017); Arendt, “Verdade e política” (1961)</p><span class="fantasma" aria-hidden="true">11</span>          </div>
+          <template class="notas">Esse caso mostra que desinformação não é apenas erro de informação: organiza emoções, inimigos e silêncios.</template>
+        </section>
+              <section class="quadro layout-quadrantes"
+                 id="q12"
+                 data-x="3524" data-y="2957" data-r="10" data-s="0.9"
+                 data-rotulo="Análise"
+                 aria-label="12. Análise"
+                 style="transform: translate(3524px, 2957px) rotate(10deg) scale(0.9) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">12</span>Análise</p><h2 class="titulo split">Leitura arendtiana do caso</h2></header><div class="quadrantes"><article class="quad  rv" style="--i:2"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/broto.png');mask-image:url('assets/img/icons/broto.png')" aria-hidden="true"></span><div><h3>Trabalho</h3><p>Medo de perder vínculos, emprego ou aceitação social</p></div></article><article class="quad  rv" style="--i:4"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/instituicao.png');mask-image:url('assets/img/icons/instituicao.png')" aria-hidden="true"></span><div><h3>Obra</h3><p>A universidade deveria formar pensamento crítico</p></div></article><article class="quad  rv" style="--i:6"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/conversa.png');mask-image:url('assets/img/icons/conversa.png')" aria-hidden="true"></span><div><h3>Ação</h3><p>Questionar, verificar, acolher e responder publicamente</p></div></article><article class="quad alerta rv" style="--i:8"><span class="ico " style="-webkit-mask-image:url('assets/img/icons/olho-fechado.png');mask-image:url('assets/img/icons/olho-fechado.png')" aria-hidden="true"></span><div><h3>Omissão</h3><p>Deixar que o medo substitua o julgamento</p></div></article></div><p class="fonte rv" style="--i:12">Fontes: Arendt, A condição humana (1958); Responsabilidade e julgamento (2003)</p><span class="fantasma" aria-hidden="true">12</span>          </div>
+          <template class="notas">A omissão institucional também é uma ação: mantém condições para que a injustiça continue.</template>
+        </section>
+              <section class="quadro layout-checklist"
+                 id="q13"
+                 data-x="84" data-y="4829" data-r="-1" data-s="0.85"
+                 data-rotulo="Proposta"
+                 aria-label="13. Proposta"
+                 style="transform: translate(84px, 4829px) rotate(-1deg) scale(0.85) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">13</span>Proposta</p><h2 class="titulo split">Responsabilidade pública em prática</h2></header><ul class="checklist"><li class="chk rv" style="--i:2"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/lupa.png');mask-image:url('assets/img/icons/lupa.png')" aria-hidden="true"></span><span class="chk-txt">Verificar a informação antes de compartilhar</span></li><li class="chk rv" style="--i:3"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/etiqueta.png');mask-image:url('assets/img/icons/etiqueta.png')" aria-hidden="true"></span><span class="chk-txt">Nomear o problema sem desumanizar as pessoas</span></li><li class="chk rv" style="--i:4"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/apoio.png');mask-image:url('assets/img/icons/apoio.png')" aria-hidden="true"></span><span class="chk-txt">Apoiar quem foi atingido</span></li><li class="chk rv" style="--i:5"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/escudo.png');mask-image:url('assets/img/icons/escudo.png')" aria-hidden="true"></span><span class="chk-txt">Cobrar posicionamento e protocolos da instituição</span></li><li class="chk rv" style="--i:6"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/debate.png');mask-image:url('assets/img/icons/debate.png')" aria-hidden="true"></span><span class="chk-txt">Criar espaços de escuta e debate</span></li><li class="chk rv" style="--i:7"><span class="chk-box"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7"/></svg></span><span class="ico " style="-webkit-mask-image:url('assets/img/icons/ampulheta.png');mask-image:url('assets/img/icons/ampulheta.png')" aria-hidden="true"></span><span class="chk-txt">Assumir que nenhuma ação garante resultado imediato</span></li></ul><p class="lema rv" style="--i:10">A responsabilidade não exige heroísmo diário; exige não se tornar cúmplice do silêncio.</p><p class="fonte rv" style="--i:12">Fontes: Arendt, Responsabilidade e julgamento (2003); Wardle e Derakhshan (2017)</p><span class="fantasma" aria-hidden="true">13</span>          </div>
+          <template class="notas">A responsabilidade não exige heroísmo diário; exige não se tornar cúmplice do silêncio.</template>
+        </section>
+              <section class="quadro layout-conclusao"
+                 id="q14"
+                 data-x="-3760" data-y="3386" data-r="-10" data-s="1.05"
+                 data-rotulo="Conclusão"
+                 aria-label="14. Conclusão"
+                 style="transform: translate(-3760px, 3386px) rotate(-10deg) scale(1.05) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">14</span>Conclusão</p><h2 class="titulo split">Um projeto de vida responsável</h2></header>
+    <div class="grade-conclusao">
+      <ol class="conclusao-lista"><li class="rv" style="--i:2"><span class="estrela-ponto"></span>Inclui sobrevivência, mas não se reduz a ela</li><li class="rv" style="--i:3"><span class="estrela-ponto"></span>Constrói obra, mas não confunde sucesso com isolamento</li><li class="rv" style="--i:4"><span class="estrela-ponto"></span>Exige ação, escuta e coragem de julgar</li><li class="rv" style="--i:5"><span class="estrela-ponto"></span>Reconhece a pluralidade como condição da liberdade</li><li class="rv" style="--i:6"><span class="estrela-ponto"></span>Confia na capacidade humana de começar algo novo</li></ol>
+      <div class="pergunta-final rv" style="--i:8">
+        <div class="pf-halo" aria-hidden="true"></div>
+        <p class="maquina" data-texto="Que mundo estamos ajudando a construir?"></p>
+      </div>
+    </div><p class="fonte rv" style="--i:12">Fontes: Arendt (1958; 1961; 1963; 2003)</p><span class="fantasma" aria-hidden="true">14</span>          </div>
+          <template class="notas">Não se trata de ter todas as respostas, mas de não renunciar à pergunta sobre o mundo que estamos construindo.</template>
+        </section>
+              <section class="quadro layout-referencias"
+                 id="q15"
+                 data-x="-5251" data-y="-645" data-r="4" data-s="0.8"
+                 data-rotulo="Referências"
+                 aria-label="15. Referências"
+                 style="transform: translate(-5251px, -645px) rotate(4deg) scale(0.8) translate(-50%, -50%)">
+          <div class="quadro-borda" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quadro-conteudo">
+            <header class="cab"><p class="eyebrow rv" style="--i:0"><span class="eyebrow-num">15</span>Referências</p><h2 class="titulo split">Referências</h2></header><div class="referencias"><section class="ref-col rv" style="--i:2"><h3>Obras de Arendt</h3><ul><li>ARENDT, Hannah. <i>A condição humana</i>. Rio de Janeiro: Forense Universitária.</li><li>ARENDT, Hannah. <i>Responsabilidade e julgamento</i>. Trad. Rosaura Eichenberg. São Paulo: Companhia das Letras, 2004.</li><li>ARENDT, Hannah. <i>Entre o passado e o futuro</i>. São Paulo: Perspectiva. (“O que é liberdade?”; “Verdade e política”)</li><li>ARENDT, Hannah. <i>Eichmann em Jerusalém</i>. São Paulo: Companhia das Letras, 1999.</li><li>ARENDT, Hannah. <i>Origens do totalitarismo</i>. São Paulo: Companhia das Letras.</li><li>ARENDT, Hannah. <i>A vida do espírito</i>. Rio de Janeiro: Civilização Brasileira.</li><li>ARENDT, Hannah. <i>Conferências sobre a filosofia política de Kant</i>. Rio de Janeiro: Relume-Dumará, 1993.</li></ul></section><section class="ref-col rv" style="--i:3"><h3>Estudos e pesquisas</h3><ul><li>LAFER, Celso. <i>Hannah Arendt: pensamento, persuasão e poder</i>. São Paulo: Paz e Terra.</li><li>YOUNG-BRUEHL, Elisabeth. <i>Hannah Arendt: por amor ao mundo</i>. Rio de Janeiro: Relume-Dumará, 1997.</li><li>DAMON, William. <i>O que o jovem quer da vida?</i> São Paulo: Summus, 2009.</li><li>ASCH, S. E. Studies of independence and conformity. <i>Psychological Monographs</i>, v. 70, n. 9, 1956.</li><li>MILGRAM, S. Behavioral study of obedience. <i>J. Abnormal and Social Psychology</i>, v. 67, n. 4, p. 371–378, 1963.</li><li>VOSOUGHI, S.; ROY, D.; ARAL, S. The spread of true and false news online. <i>Science</i>, v. 359, n. 6380, p. 1146–1151, 2018.</li><li>WARDLE, C.; DERAKHSHAN, H. <i>Information Disorder</i>. Council of Europe, 2017.</li></ul></section></div><span class="fantasma" aria-hidden="true">15</span>          </div>
+          <template class="notas">Referências utilizadas no seminário.</template>
+        </section>
+          </div>
+  </main>
+
+  <!-- Efeitos de cinema -->
+  <div class="vinheta" aria-hidden="true"></div>
+  <div class="granulado" aria-hidden="true"></div>
+  <div class="feixe" aria-hidden="true"></div>
+  <div class="tarja tarja-topo" aria-hidden="true"></div>
+  <div class="tarja tarja-base" aria-hidden="true"></div>
+
+  <!-- Abertura -->
+  <section id="abertura" aria-label="Abertura">
+    <div class="ab-linha ab1">Universidade Católica de Brasília · Faculdade de Psicologia</div>
+    <div class="ab-linha ab2">apresenta</div>
+    <div class="ab-titulo">
+      <span class="ab-nome">Hannah Arendt</span>
+      <span class="ab-sub">e a responsabilidade pelo mundo comum</span>
+    </div>
+    <button id="btn-iniciar" type="button">
+      <span class="play" aria-hidden="true"></span> Iniciar apresentação
+    </button>
+    <p class="ab-dica">Use os botões abaixo da tela · teclas ← → também funcionam</p>
+  </section>
+
+  <!-- Encerramento (sobre a visão geral do mapa) -->
+  <section id="encerramento" aria-hidden="true">
+    <p class="enc-eyebrow">Fim</p>
+    <h2 class="enc-titulo">Obrigado!</h2>
+    <p class="enc-pergunta">Que mundo estamos ajudando a construir?</p>
+    <p class="enc-autores">Nicole Alves, Thayane, Ryan e Weney</p>
+  </section>
+
+  <!-- Legenda do slide atual -->
+  <div id="legenda" aria-hidden="true"><span id="leg-num">01</span><span id="leg-txt"></span></div>
+
+  <!-- Painel de notas do apresentador -->
+  <aside id="notas" aria-label="Notas do apresentador">
+    <h4>Notas do apresentador</h4>
+    <p id="notas-txt"></p>
+  </aside>
+
+  <!-- Navegação inferior -->
+  <nav id="nav" aria-label="Navegação da apresentação">
+    <div class="nav-progresso"><div id="barra"></div></div>
+    <div class="nav-linha">
+      <button class="nav-btn sec" id="btn-visao" type="button" title="Visão geral (O)">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        <span>Mapa</span>
+      </button>
+
+      <button class="nav-btn principal" id="btn-ant" type="button" title="Recuar (←)">
+        <svg viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19"/></svg>
+        <span>Recuar</span>
+      </button>
+
+      <div class="nav-centro">
+        <div id="pontos" role="tablist" aria-label="Ir para o slide">
+                      <button type="button" class="ponto" data-ir="0" title="1. Abertura" aria-label="Slide 1"></button>
+                      <button type="button" class="ponto" data-ir="1" title="2. O problema" aria-label="Slide 2"></button>
+                      <button type="button" class="ponto" data-ir="2" title="3. Quem foi Arendt" aria-label="Slide 3"></button>
+                      <button type="button" class="ponto" data-ir="3" title="4. Conceitos centrais" aria-label="Slide 4"></button>
+                      <button type="button" class="ponto" data-ir="4" title="5. Projeto de vida" aria-label="Slide 5"></button>
+                      <button type="button" class="ponto" data-ir="5" title="6. Pensamento" aria-label="Slide 6"></button>
+                      <button type="button" class="ponto" data-ir="6" title="7. Julgamento" aria-label="Slide 7"></button>
+                      <button type="button" class="ponto" data-ir="7" title="8. Pluralidade" aria-label="Slide 8"></button>
+                      <button type="button" class="ponto" data-ir="8" title="9. Liberdade política" aria-label="Slide 9"></button>
+                      <button type="button" class="ponto" data-ir="9" title="10. Natalidade" aria-label="Slide 10"></button>
+                      <button type="button" class="ponto" data-ir="10" title="11. Estudo de caso" aria-label="Slide 11"></button>
+                      <button type="button" class="ponto" data-ir="11" title="12. Análise" aria-label="Slide 12"></button>
+                      <button type="button" class="ponto" data-ir="12" title="13. Proposta" aria-label="Slide 13"></button>
+                      <button type="button" class="ponto" data-ir="13" title="14. Conclusão" aria-label="Slide 14"></button>
+                      <button type="button" class="ponto" data-ir="14" title="15. Referências" aria-label="Slide 15"></button>
+                  </div>
+        <div class="contador-nav"><b id="cont-atual">01</b> / 15</div>
+      </div>
+
+      <button class="nav-btn principal" id="btn-prox" type="button" title="Avançar (→)">
+        <span>Avançar</span>
+        <svg viewBox="0 0 24 24"><path d="M9 5 L16 12 L9 19"/></svg>
+      </button>
+
+      <div class="nav-extra">
+        <button class="nav-btn sec icone-so" id="btn-notas" type="button" title="Notas do apresentador (N)">
+          <svg viewBox="0 0 24 24"><path d="M5 4 H15 L19 8 V20 H5 Z"/><path d="M8 11 H16 M8 15 H14"/></svg>
+        </button>
+        <button class="nav-btn sec icone-so" id="btn-tela" type="button" title="Tela cheia (F)">
+          <svg viewBox="0 0 24 24"><path d="M4 9 V4 H9 M15 4 H20 V9 M20 15 V20 H15 M9 20 H4 V15"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <script src="assets/js/prezi.js"></script>
+</body>
+</html>
